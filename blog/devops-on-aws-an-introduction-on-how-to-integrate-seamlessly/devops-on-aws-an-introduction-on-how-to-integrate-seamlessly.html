@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta name="google-site-verification" content="Pzlf3UfZb1toAFBWBiXWy5sLq--6lUULyGZ46nQzAuw" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="msvalidate.01" content="A324E8D08DF3B17EF3ABB21DEE906E42" />
+<title>
+DevOps on AWS: Introduction on How to Integrate Seamlessly</title>
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.veritis.com/xmlrpc.php">
+<link href="../../wp-content/themes/Veritis/images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="../../wp-content/themes/Veritis/css/settings-hideo.css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script type="text/javascript" src="../../wp-content/themes/Veritis/js/jquery.js"></script>
+<script type="text/javascript" src="../../wp-content/themes/Veritis/js/jquery.slimmenu.min.js"></script>
+<script type="text/javascript" src="../../wp-content/themes/Veritis/js/jquery.easing.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85006054-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+
+
+gtag('config', 'UA-85006054-1');
+</script>
+		<style type="text/css">
+					.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+											.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{
+							color: #fff;
+						border-width: 0px;
+			border-style: solid;
+			border-color: transparent;
+		}
+					.heateor_sss_horizontal_sharing .heateorSssTCBackground{
+				color:#666;
+			}
+					.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{
+						border-color: transparent;
+		}
+		.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{
+							color: #fff;
+						border-width: 0px;
+			border-style: solid;
+			border-color: transparent;
+		}
+				.heateor_sss_vertical_sharing .heateorSssTCBackground{
+			color:#666;
+		}
+						.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{
+						border-color: transparent;
+		}
+		@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:783px){div.heateor_sss_bottom_sharing .heateorSssTCBackground{background-color:white}div.heateor_sss_bottom_sharing{width:100%!important;left:0!important;}div.heateor_sss_bottom_sharing a{width:16.666666666667% !important;}div.heateor_sss_bottom_sharing .heateor_sss_svg{width: 100% !important;}div.heateor_sss_bottom_sharing div.heateorSssTotalShareCount{font-size:1em!important;line-height:28px!important}div.heateor_sss_bottom_sharing div.heateorSssTotalShareText{font-size:.7em!important;line-height:0px!important}div.heateor_sss_mobile_footer{display:block;height:40px;}.heateor_sss_bottom_sharing{padding:0!important;display:block!important;width:auto!important;bottom:-2px!important;top: auto!important;}.heateor_sss_bottom_sharing .heateor_sss_square_count{line-height:inherit;}.heateor_sss_bottom_sharing .heateorSssSharingArrow{display:none;}.heateor_sss_bottom_sharing .heateorSssTCBackground{margin-right:1.1em!important}}		</style>
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v18.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>DevOps on AWS: Introduction on How to Integrate Seamlessly</title>
+	<meta name="description" content="DevOps is one of the most used methodologies in the IT arena now. In this blog, we shall look at how to execute DevOps on AWS better than most." />
+	<link rel="canonical" href="devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.html" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="DevOps on AWS: Introduction on How to Integrate Seamlessly" />
+	<meta name="twitter:description" content="DevOps is one of the most used methodologies in the IT arena now. In this blog, we shall look at how to execute DevOps on AWS better than most." />
+	<meta name="twitter:image" content="https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly-thumb.jpg" />
+	<meta name="twitter:site" content="@Veritis_Group" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="7 minutes" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://code.jquery.com/' />
+<link rel='dns-prefetch' href='https://veritis.com/' />
+<link rel='dns-prefetch' href='https://assets.pinterest.com/' />
+<link rel='dns-prefetch' href='https://www.google.com/' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel="alternate" type="application/rss+xml" title="Veritis Group Inc &raquo; Feed" href="../../feed/feed.html" />
+<link rel="alternate" type="application/rss+xml" title="Veritis Group Inc &raquo; Blog Comment Feed" href="../../comments/feed/feed.html" />
+<link rel='stylesheet' id='wp-block-library-css'  href='../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='apsp-font-opensans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans&amp;ver=19e462c83b29b896599fb3b7775976d6' type='text/css' media='all' />
+<link rel='stylesheet' id='apsp-frontend-css-css'  href='../../wp-content/plugins/accesspress-pinterest/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='../../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='../../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_ac-font-awesome-front-css'  href='../../wp-content/plugins/responsive-accordion-and-collapse/css/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_ac_bootstrap-front-css'  href='../../wp-content/plugins/responsive-accordion-and-collapse/css/bootstrap-front.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../../wp-content/plugins/slider-revolution-master/public/assets/css/settings.css' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='wp-job-manager-job-listings-css'  href='../../wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='../../wp-content/plugins/wp-pagenavi/pagenavi-css.css' type='text/css' media='all' />
+<link rel='stylesheet' id='web2feel-style-css'  href='../../wp-content/themes/Veritis/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../wp-content/themes/Veritis/bootstrap/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='glyphicons-css'  href='../../wp-content/themes/Veritis/css/bootstrap-glyphicons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-css'  href='../../wp-content/themes/Veritis/theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='heateor_sss_frontend_css-css'  href='../../wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.4.1.min.js?ver=19e462c83b29b896599fb3b7775976d6' id='jquery-js'></script>
+<script type='text/javascript' src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#1587c8","button_1_button_hover":"#116ca0","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#62a329","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"1","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":"1","show_once":"8000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"widget","popup_showagain_position":"bottom-right","widget_position":"right"};
+var log_object = {"ajax_url":"https:\/\/www.veritis.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js' id='cookie-law-info-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/slider-revolution-master/public/assets/js/jquery.themepunch.tools.min.js' id='tp-tools-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/slider-revolution-master/public/assets/js/jquery.themepunch.revolution.min.js' id='revmin-js'></script>
+<link rel="https://api.w.org/" href="../../wp-json/wp-json.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.veritis.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://www.veritis.com/?p=13271' />
+<link rel="alternate" type="application/json+oembed" href="https://www.veritis.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.veritis.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F&#038;format=xml" />
+
+
+<!-- This site is optimized with the Schema plugin v1.7.9.4 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.veritis.com\/blog\/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly\/"},"url":"https:\/\/www.veritis.com\/blog\/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly\/","headline":"DevOps on AWS: An Introduction on How to Integrate Seamlessly","datePublished":"2022-03-10T01:45:45+00:00","dateModified":"2022-06-07T10:51:57+00:00","publisher":{"@type":"Organization","@id":"https:\/\/www.veritis.com\/#organization","name":"Veritis Group Inc","logo":{"@type":"ImageObject","url":"http:\/\/www.veritis.com\/wp-content\/uploads\/2015\/06\/logo1.jpg","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/veritis.com\/wp-content\/uploads\/2022\/03\/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly-thumb.jpg","width":696,"height":600},"keywords":"AWS, Azure, Cloud Services, cloud technology provider, DevOps, DevOps Platform, DevSecOps, GCP, Google Cloud, IaaS, IT company, Veritis Blog","description":"DevOps is one of the most used methodologies in the IT arena now. Propelled by cloud technology’s proliferation, IT companies are making the most of it. However, while DevOps has its own set of challenges, cloud technology providers are not tarrying any moments to ingrain their offerings with the best","author":{"@type":"Person","name":"VeritisAdmin","url":"https:\/\/www.veritis.com\/author\/admin\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/688d39788aa189bfd107beb558bb81b4?s=96&d=mm&r=g","height":96,"width":96}}}</script>
+
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.veritis.com/?wordfence_lh=1&hid=BAA1D89E8A633CBBB3B09CF782A3DAEA');
+</script><meta name="generator" content="Powered by Slider Revolution 5.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="../../wp-content/uploads/2015/06/favicon.ico" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2015/06/favicon.ico" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2015/06/favicon.ico" />
+<meta name="msapplication-TileImage" content="https://veritis.com/wp-content/uploads/2015/06/favicon.ico" />
+		<style type="text/css" id="wp-custom-css">
+			/* Accordion Design Starts */
+
+h4.wpsm_panel-title {
+    padding-bottom: 0px !important;
+    font-weight: 600;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+#inner_page ol {
+    padding-bottom: 0px !important;
+}
+
+
+/* Accordion Design Ends */		</style>
+			</head>
+<body data-rsssl=1 class="blog-template-default single single-blog postid-13271 group-blog veritis">
+<div id="page" class="hfeed site">
+
+<!-- Start of Header Section -->
+
+<header>
+
+
+
+
+
+
+
+
+
+						</div>
+        </div>
+</div>
+</div>
+</nav>
+</header>
+<div id="content" class="site-content ">
+<section id="banner_inner">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-7">
+            <div class="b_title"> Blog </div>
+         </div>
+         <div class="col-lg-5">
+            <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+               <!-- Breadcrumb NavXT 7.0.2 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Veritis Group Inc." href="../../www_veritis_default_2.html" class="home"><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Resources." href="../../resources.html" class="post post-page"><span property="name">Resources</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Blog." href="../../blog.html" class="blog-root post post-blog"><span property="name">Blog</span></a><meta property="position" content="3"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">DevOps on AWS: An Introduction on How to Integrate Seamlessly</span><meta property="position" content="4"></span>            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="content">
+   <section id="inner_page" class="padding resource_page">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 blog-container">
+               <div class="blog_content">
+                                    <h1>DevOps on AWS: An Introduction on How to Integrate Seamlessly</h1>
+                  <div class="meta">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <p>By Veritis</p>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="social_media sm1">
+                              <div class="social_media"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p><img class="alignnone wp-image-13275 size-full" title="DevOps on AWS: An Introduction on How to Integrate Seamlessly" src="https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.jpg" alt="DevOps on AWS: An Introduction on How to Integrate Seamlessly" width="800" height="422" srcset="https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.jpg 800w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly-300x158.jpg 300w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly-768x405.jpg 768w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly-600x317.jpg 600w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>DevOps is one of the most used methodologies in the IT arena now. Propelled by cloud technology’s proliferation, IT companies are making the most of it. However, while DevOps has its own set of <a href="../../eight-devops-adoption-challenges-businesses-must-overcome.html" target="_blank" rel="noopener">challenges</a>, <a href="../lack-cloud-expertise-cost-enterprises-250-million-annually/cloud.html" target="_blank" rel="noopener">cloud technology providers</a> are not tarrying any moments to ingrain their offerings with the best possible features. While this sounds great, it has brought an unexpected challenge as one would find it challenging to navigate through AWS, the most-used cloud, as Amazon wasted no efforts refining their offering.</p>
+<p>As DevOps spawned off <a href="../../devsecops-services.html" target="_blank" rel="noopener">DevSecOps</a>, the approach with security at its core, AWS too came out with new tools which would support DevSecOps. However, the above challenge continues to persist, and in this blog, we shall look at how to execute <a href="../../aws-devops-services-drive-your-devops-journey-with-aws-seamless-flow.html" target="_blank" rel="noopener">DevOps on AWS</a> better than most.</p>
+<h2>Overview of AWS</h2>
+<p>Amazon Web Services was the first entrant in the cloud space, and it has secured the title of being ‘the most-used cloud’ as it has the largest market share. <strong>Microsoft&#8217;s Azure</strong> is hot on its heels, with its unique <a href="../../azure-devops-services-plan-smart-build-fast-and-execute-at-a-new-speed.html" target="_blank" rel="noopener">tools</a> and <a href="../../what-is-azure-devops-and-how-it-helps-businesses-drive-growth.html" target="_blank" rel="noopener">benefits</a>. Last, but certainly not the least, is Google Cloud, which like its competition, has its offering but more on that later.</p>
+<h3>Introduction to DevOps on AWS</h3>
+<p><img loading="lazy" class="alignnone wp-image-13277 size-full" title="Introduction to DevOps on AWS" src="https://veritis.com/wp-content/uploads/2022/03/introduction-to-devops-on-aws.jpg" alt="Introduction to DevOps on AWS" width="800" height="450" srcset="https://veritis.com/wp-content/uploads/2022/03/introduction-to-devops-on-aws.jpg 800w, https://veritis.com/wp-content/uploads/2022/03/introduction-to-devops-on-aws-300x169.jpg 300w, https://veritis.com/wp-content/uploads/2022/03/introduction-to-devops-on-aws-768x432.jpg 768w, https://veritis.com/wp-content/uploads/2022/03/introduction-to-devops-on-aws-600x338.jpg 600w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>While there is no such specific section for DevOps in AWS, the cloud offering of Amazon has the required tools to propel DevOps productivity. DevOps production mainly deals with the developers rolling off the deliverables as iterative and operations units making that iterative work. This iterative approach has paved the way for continuous integration and continuous delivery (CI/CD). While this approach yields fruitful results, CI/CD will see DevOps storing the source code and version application files on the cloud, and AWS has not pulled any punches when it comes to security.</p>
+<p>AWS is one of the most secure clouds, and it is used not only by private corporations but also by governmental departments to store their sensitive data. Additionally, the DevOps team has the flexibility to deploy the application on their on-premises infrastructure or AWS even if the DevOps team preps the deliverables on AWS.</p>
+<p>While there are various service categories, AWS, while offering all the major services, can be perceived as Infrastructure as a Service (IaaS). This is because it provides instant scalability and allows the customer to control the resources completely. IaaS also brings along virtual servers and a variety of operating systems.</p>
+<hr />
+<p><strong>Useful Link: : <a href="../../aws-as-a-perfect-choice-for-disaster-recovery.html" target="_blank" rel="bookmark noopener">AWS – Perfect Choice for Disaster Recovery</a></strong></p>
+<hr />
+<h2>How AWS Supports DevOps</h2>
+<p>CI/CD pipeline is crucial for DevOps as a lot of the work happens in this area. However, it is challenging to build the pipeline when sourcing the tools from a handful of numerous vendors. From integration to compatibility, one would be compelled to address various concerns which are more of hassles. Furthermore, even if the CI/CD process is successfully established, there is always the potentiality that an update may make brick the existing infrastructure as numerous third-party vendor components are involved.</p>
+<p>These experiences have only driven home that implementing DevOps using AWS is easier as the cloud is a one-stop solution. Aside from the security and virtual infrastructure, the automation tools and automatic compatible updates across the infrastructure are just some of the benefits an AWS customer gets.</p>
+<p>So, let’s dive deeper into AWS&#8217;s specific tools for a robust CI/CD pipeline.</p>
+<ul>
+<li>AWS CodeBuild: As its name implies, CodeBuild is all about creating the code that the DevOps team desires. It allows the team members to compile the source code, subject it to tests, and read the package for deployment.</li>
+<li>AWS CodeCommit: Git is one widely used programming functionality, and AWS took cognizance of it. It built a tool that allows the developers to control and gives them the ability to host Git-based repositories securely. As security is involved, your DevSecOps will have to be roped in as they have to configure the existing Git client to relay the Git codes to CodeCommit repositories.</li>
+<li>AWS CodeDeploy: Yes, you guessed it right. CodeDeploy allows the DevOps team to deploy codes with little to no effort to automate the deployment. The deployment extends to on-premises, third-party services as well.</li>
+<li>AWS CodePipeline: This tool is all about CI/CD betterment through efficiency and security. The tool has DevSecOps at its heart, and utilizing this; the project members would get swift and secure software updates.</li>
+<li>AWS CloudFormation: DevSecOps is given a major boost with CloudFormation as it is a tool that allows the DevOps team to provide the resources on the infrastructure automatically. This tool is also for <strong>DevSecOps</strong> as one can create a template secured by AWS for CI/CD pipeline.</li>
+<li>AWS Lambda: Lambda is a serverless tool that executes code whenever the trigger is detected. One can run this tool to conduct static code analysis. It can also perform dynamic stack validation for the established security parameters.</li>
+<li>Simple Storage Service or S3: AWS’s Simple Storage is a breeze to use as it allows its customers to access data and back it up while storing web data and other assets. What makes S3 better than its competition is its user interface (UI) which allows its customers to place its data within buckets, and they can manage the data quite swiftly anytime. The data management includes complete access to the user by allowing them to modify or delete as and when required.</li>
+<li>AWS Auto Scaling: Autoscalability is one of the essential features in the current day as the demand for various services is ever fluctuating. While both Azure and GCP offer Auto Scaling, users have noted that the experience is much more fluidic on AWS as the Amazon team is quite timely and responsive. This service creates capacity groups of servers that users can expand or reduce as needed and on-demand.</li>
+<li>AWS CloudFront: This component provides great flexibility to its users as it works with non-AWS clouds. The tool provides content for any website or application, and this content provision extends to dynamic, streaming, and static platforms. For instance, the OTT entertainment apps are in great demand, and some of the entertainment companies such as Netflix have roped in AWS to sustain the heavy global demand.</li>
+</ul>
+<p>Before we conclude, let’s have a brief look at the competition.</p>
+<h3>DevOps on AWS, Azure, and GCP</h3>
+<p><img loading="lazy" class="alignnone wp-image-13276 size-full" title="DevOps on AWS, Azure, and GCP" src="https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-azure-and-gcp.jpg" alt="DevOps on AWS, Azure, and GCP" width="800" height="450" srcset="https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-azure-and-gcp.jpg 800w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-azure-and-gcp-300x169.jpg 300w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-azure-and-gcp-768x432.jpg 768w, https://veritis.com/wp-content/uploads/2022/03/devops-on-aws-azure-and-gcp-600x338.jpg 600w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>While all three clouds have topnotch solutions, pricing, infrastructure, and cross-platform deployments are important capabilities that play a crucial role in deciding your <strong>DevOps platform</strong>. While all three of them offer a pay-as-you-go billing model, AWS offers the model on an hourly basis while Azure bills its customers on a minute basis and Google Cloud charges for the seconds the resources were used. While AWS sounds costly, it was found that it was much more cost-effective than Azure.</p>
+<p>Gartner concluded that Google Cloud sweetens the deal for its customers by offering various discounts and better flexibility.</p>
+<p>Although cross-platform deployment is relatively new, requirements have compelled DevOps to seek multi-cloud compatibility. This is one aspect where AWS lags while Azure and Google Cloud have made considerable progress on this front. Both AWS’s competitors have released specific offerings such as Anthos to enable multi-cloud flexibility.</p>
+<p><a class="btn btn-primary btn-lg active" role="button" href="https://veritis.com/wp-content/uploads/2022/03/DevOps-on-AWS-An-Introduction-on-How-to-Integrate-Seamlessly.pdf" target="_blank" rel="noopener">Download PDF</a></p>
+<hr />
+<p><strong>Useful Link:  <a href="../../aws-vs-azure-vs-gcp-the-cloud-platform-of-your-choice.html" target="_blank" rel="noopener">Choice Your Cloud Platform:  AWS Vs Azure Vs GCP</a></strong></p>
+<hr />
+<p><strong>Conclusion</strong></p>
+<p>While DevOps is a great strategy, it is a labyrinth navigating through AWS as it is the oldest technology with a wide range of tools. While some of the <a href="../devops-made-easier-with-devops-tools/made-easier-with-devops-tools.html" target="_blank" rel="noopener">DevOps tools</a> were listed above, there are many more such as Elastic Block Store and Relational Database Service, which are apt for <strong>DevOps</strong> and <strong>DevSecOps</strong>.</p>
+<p>However, knowing which resource to use holds the key to success, and often people wind up paying more, or for resources they don’t even need due to lack of knowledge or ill-advice from clueless MSPs’. It is pertinent that companies collaborate with capable MSPs’ such as Veritis to make the best out of DevOps on AWS. Armed with experts who understand the unique needs of organizations of various scales, Veritis has doled out robust and productive solutions.</p>
+<p>So, reach out to us and walk away with an <strong>AWS solution</strong> that supports your DevOps strategy.</p>
+<p><a class="btn btn-primary btn-lg active" href="../devops-managed-services-tap-the-true-potential-of-your-devops-transformation/devops.html" target="_blank" rel="noopener">Explore DevOps Services</a></p>
+<hr />
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="../../eks-vs-aks-vs-gke-which-is-the-right-kubernetes-platform-for-you.html" target="_blank" rel="noopener">EKS Vs. AKS Vs. GKE: Which is the right Kubernetes platform for you?</a></li>
+<li><a href="../../what-is-azure-devops-and-how-it-helps-businesses-drive-growth.html" target="_blank" rel="noopener">What is Azure DevOps and How it Helps Businesses Drive Growth</a></li>
+<li><a href="../gitops-whats-it-all-about/gitops-whats-it-all-about.html" target="_blank" rel="noopener">GitOps. What’s it all about?</a></li>
+<li><a href="../../aws-vs-azure-vs-gcp-the-cloud-platform-of-your-choice.html" target="_blank" rel="noopener">AWS Vs Azure Vs GCP – The Cloud Platform of Your Choice?</a></li>
+<li><a href="../../aws-devops-services-drive-your-devops-journey-with-aws-seamless-flow.html" target="_blank" rel="bookmark noopener">AWS DevOps Services – Drive your DevOps Journey with AWS Seamless Flow</a></li>
+<li><a href="../../implementation-strategy-tools-collaboration.html" target="_blank" rel="noopener">DevOps Implementation Services in USA</a></li>
+<li class="entry-title"><a href="../../future-of-devops-top-6-devops-trends-in-2022-and-beyond.html" rel="bookmark">Future of DevOps: Top 6 DevOps Trends in 2022 and Beyond</a></li>
+</ul>
+<div class='heateor_sss_sharing_container heateor_sss_vertical_sharing heateor_sss_bottom_sharing' style='width:44px;left: -10px;top: 100px;-webkit-box-shadow:none;box-shadow:none;' data-heateor-sss-href='https://www.veritis.com/blog/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly/'><div class="heateor_sss_sharing_ul"><a class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#3c589a;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-5 -5 42 42"><path d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_twitter" href="http://twitter.com/intent/tweet?text=DevOps%20on%20AWS%3A%20An%20Introduction%20on%20How%20to%20Integrate%20Seamlessly&url=https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F" title="Twitter" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_twitter" style="background-color:#55acee;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F&title=DevOps%20on%20AWS%3A%20An%20Introduction%20on%20How%20to%20Integrate%20Seamlessly" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a class="heateor_sss_button_pinterest" onclick="javascript:void( (function() {var e=document.createElement('script' );e.setAttribute('type','text/javascript' );e.setAttribute('charset','UTF-8' );e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)})());" title="Pinterest" rel="nofollow noopener" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_pinterest" style="background-color:#cc2329;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-2 -2 35 35"><path fill="#fff" d="M16.539 4.5c-6.277 0-9.442 4.5-9.442 8.253 0 2.272.86 4.293 2.705 5.046.303.125.574.005.662-.33.061-.231.205-.816.27-1.06.088-.331.053-.447-.191-.736-.532-.627-.873-1.439-.873-2.591 0-3.338 2.498-6.327 6.505-6.327 3.548 0 5.497 2.168 5.497 5.062 0 3.81-1.686 7.025-4.188 7.025-1.382 0-2.416-1.142-2.085-2.545.397-1.674 1.166-3.48 1.166-4.689 0-1.081-.581-1.983-1.782-1.983-1.413 0-2.548 1.462-2.548 3.419 0 1.247.421 2.091.421 2.091l-1.699 7.199c-.505 2.137-.076 4.755-.039 5.019.021.158.223.196.314.077.13-.17 1.813-2.247 2.384-4.324.162-.587.929-3.631.929-3.631.46.876 1.801 1.646 3.227 1.646 4.247 0 7.128-3.871 7.128-9.053.003-3.918-3.317-7.568-8.361-7.568z"/></svg></span></a><a class="heateor_sss_whatsapp" href="https://api.whatsapp.com/send?text=DevOps%20on%20AWS%3A%20An%20Introduction%20on%20How%20to%20Integrate%20Seamlessly https%3A%2F%2Fwww.veritis.com%2Fblog%2Fdevops-on-aws-an-introduction-on-how-to-integrate-seamlessly%2F" title="Whatsapp" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#55eb4c;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-6 -5 40 40"><path class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke="#fff" stroke-width="2" fill="none" d="M 11.579798566743314 24.396926207859085 A 10 10 0 1 0 6.808479557110079 20.73576436351046"></path><path d="M 7 19 l -1 6 l 6 -1" class="heateor_sss_no_fill heateor_sss_svg_stroke" stroke="#fff" stroke-width="2" fill="none"></path><path d="M 10 10 q -1 8 8 11 c 5 -1 0 -6 -1 -3 q -4 -3 -5 -5 c 4 -2 -1 -5 -1 -4" fill="#fff"></path></svg></span></a><a class="heateor_sss_more" title="More" rel="nofollow noopener" style="font-size: 32px!important;border:0;box-shadow:none;display:inline-block!important;font-size:16px;padding:0 4px;vertical-align: middle;display:inline;" href="devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.html" onclick="event.preventDefault()"><span class="heateor_sss_svg" style="background-color:#ee8e2d;width:40px;height:40px;margin:0;display:inline-block!important;opacity:1;float:left;font-size:32px!important;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;display:inline;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box;" onclick="heateorSssMoreSharingPopup(this, 'https://www.veritis.com/blog/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly/', 'DevOps%20on%20AWS%3A%20An%20Introduction%20on%20How%20to%20Integrate%20Seamlessly', '' )"><svg xmlns="http://www.w3.org/2000/svg" style="display:block;" width="100%" height="100%" viewBox="-4 -4 38 38"><circle cx="10" cy="15" r="3" fill="#fff"></circle><circle cx="20" cy="10" r="3" fill="#fff"></circle><circle cx="20" cy="20" r="3" fill="#fff"></circle><path d="M 10 15 L 20 10 m 0 10 L 10 15" class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke-width="2" stroke="#fff"></path></svg></span></a></div><div class="heateorSssClear"></div></div>               <!-- <div class="tag">   </div> -->
+               <!--div class="social_media sm1">
+                  <div class="row">
+                  	<div class="col-sm-3">
+                  		<h5>Share This Post</h5>
+                  	</div>
+                  	<div class="col-sm-9">
+                  		<//?php echo do_shortcode('[Sassy_Social_Share]'); ?>
+                  	</div>
+                  </div>
+                  </div-->
+                              </article>
+                           </div>
+            
+	<div id="secondary" class="widget-area col-sm-4" role="complementary">
+	<div class="sidebar">
+							<aside id="custom-post-type-recent-posts-8" class="widgets widget_recent_entries"><h3>Recent Blog Posts</h3>			<ul>
+													<li>
+										<a href="../../devops-vs-devsecops-approaches-which-amplify-automation-and-security.html">DevOps vs DevSecOps: Approaches Which Amplify Automation and Security</a>
+														</li>
+													<li>
+										<a href="../../all-you-need-to-know-about-devsecops-its-implementation.html">All You Need to Know About DevSecOps and its Implementation</a>
+														</li>
+													<li>
+										<a href="../../sre-vs-devops-which-productivity-approach-is-better.html">SRE vs DevOps: Which Productivity Approach is Better?</a>
+														</li>
+													<li>
+										<a href="../../whats-saas-and-what-are-the-saas-tools-you-should-use.html">What’s SaaS, and What are the SaaS Tools You Should Use?</a>
+														</li>
+													<li>
+										<a href="../../managing-kubernetes-applications-through-terraform-and-aws-eks.html">Managing Kubernetes Applications Through Terraform and AWS EKS</a>
+														</li>
+							</ul>
+			</aside>
+		<aside id="recent-posts-18" class="widgets widget_recent_entries">
+		<h3>Recent News</h3>
+		<ul>
+											<li>
+					<a href="../../amazon-web-services-awss-impressive-growth-fails-to-fuel-amazons-profitability.html">Amazon Web Services (AWS’s) Impressive Growth Fails to Fuel Amazon’s Profitability</a>
+									</li>
+											<li>
+					<a href="../../aws-summit-san-francisco-amazon-launches-five-new-innovation-tools.html">AWS Summit San Francisco: Amazon Launches Five New Innovation Tools</a>
+									</li>
+											<li>
+					<a href="../../veritis-clinches-the-prestigious-stevie-award-for-its-devops-excellence.html">Veritis Clinches the Prestigious Stevie Award for its DevOps Excellence</a>
+									</li>
+											<li>
+					<a href="../../google-cloud-launches-biglake-a-unified-data-storage-option.html">Google Cloud Launches BigLake, a Unified Data Storage Option</a>
+									</li>
+											<li>
+					<a href="../../microsoft-overhauls-its-partner-program-as-azure-on-centre-stage.html">Microsoft Overhauls its Partner Program as Azure on Centre Stage</a>
+									</li>
+					</ul>
+
+		</aside>			<aside id="custom-post-type-recent-posts-3" class="widgets widget_recent_entries"><h3>Recent Infographics</h3>			<ul>
+													<li>
+										<a href="../../top-impediments-which-bog-down-digital-transformation.html">Top Impediments Which Bog Down Digital Transformation</a>
+														</li>
+													<li>
+										<a href="../../eight-devops-adoption-challenges-businesses-must-overcome.html">8 DevOps Adoption Challenges Businesses Must Overcome</a>
+														</li>
+													<li>
+										<a href="../../9-keys-to-selecting-a-right-cloud-managed-services-provider-msp.html">9 Keys to Selecting a Right Cloud Managed Services Provider (MSP)</a>
+														</li>
+													<li>
+										<a href="../../debunking-myths-around-zero-trust-security.html">Debunking Myths Around Zero Trust Security!</a>
+														</li>
+													<li>
+										<a href="../../hybrid-cloud-vs-multi-cloud-whats-the-difference.html">Hybrid Cloud Vs Multi Cloud: What’s the Difference!</a>
+														</li>
+							</ul>
+			</aside>			</div><!-- #secondary -->
+	</div>
+         </div>
+      </div>
+   </section>
+</section>
+<!--Download Form Modal Starts-->
+</div>
+<!-- #content -->
+<!-- Start of Footer -->
+<div class="sticky-sidebar">
+<div id="mySidepanel" class="sidepanel">
+   <div class="pull-left">
+   <h3>Contact Us</h3>
+   </div>
+   <div class="pull-right">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+   </div>
+<div role="form" class="wpcf7" id="wpcf7-f658-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.html#wpcf7-f658-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="658" />
+<input type="hidden" name="_wpcf7_version" value="5.5.6" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f658-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<div id="respond">
+<div class="form_content comment-form">
+<p class="comment-form-author">
+        <span class="wpcf7-form-control-wrap fname"><input type="text" name="fname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" /></span> </p>
+<p class="comment-form-email">
+              <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address*" /></span></p>
+<p class="comment-form-author">
+       <span class="wpcf7-form-control-wrap text-200"><input type="text" name="text-200" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Organization" /></span> </p>
+<p class="comment-form-url">
+             <span class="wpcf7-form-control-wrap tel-850"><input type="tel" name="tel-850" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone*" /></span>
+</p>
+<p class="comment-form-url">
+        <span class="wpcf7-form-control-wrap your-services"><select name="your-services" class="wpcf7-form-control wpcf7-select" aria-invalid="false"><option value="Please select project type">Please select project type</option><option value="Cloud">Cloud</option><option value="Containerization">Containerization</option><option value="DevOps">DevOps</option><option value="Digital Transformation">Digital Transformation</option><option value="Identity and Access Management">Identity and Access Management</option><option value="IT Infrastructure">IT Infrastructure</option><option value="Managed Services">Managed Services</option><option value="Technology Advisory">Technology Advisory</option><option value="Other">Other</option></select></span> </p>
+<p class="comment-form-comment">
+         <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea></span></p>
+<p class="form-submit1">
+     <input type="submit" value="Submit" class="wpcf7-form-control has-spinner wpcf7-submit" />
+                </p>
+</div>
+</div>
+<div style="clear:both; height:1px;">&nbsp;</div>
+<p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="244"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+<button class="openbtn" onClick="openNav();">Get in Touch</button>
+</div>
+<footer id="footerWrapper colophon" class="footer2">
+   <section id="mainFooter">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 col-sm-3">
+               <div class="footerWidget wow fadeInDown">
+                  <h3>Quick Links</h3>                  <nav>
+                     <div class="menu-quick-links-container"><ul id="menu-quick-links" class="list"><li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a href="../../about-us.html">About Us</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230"><a href="../../solutions.html">Solutions</a></li>
+<li id="menu-item-3206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3206"><a href="../../industries.html">Industries</a></li>
+<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="../../careers.html">Careers</a></li>
+<li id="menu-item-8811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8811"><a href="../../contact.html">Contact</a></li>
+<li id="menu-item-1071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1071"><a href="../../site-map.html">Sitemap</a></li>
+</ul></div>                  </nav>
+               </div>
+			         <ul class="socialNetwork">
+                     <li><a href="https://www.facebook.com/VeritisGroupInc/" target="_blank" title="Follow Us On Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>                     <li><a href="https://www.twitter.com/Veritis_Group" target="_blank" title="Follow Us On Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>                     <li><a href="https://www.linkedin.com/company/veritis-group-inc" target="_blank" title="Follow Us On Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>                     <li><a href="https://www.youtube.com/channel/UCyCocYPhtB4wJWcbWYg61uA" target="_blank" title="Follow Us On Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>                     <li><a href="https://www.instagram.com/veritisgroup/" target="_blank" title="Follow Us On Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>                  </ul>
+            </div>
+            <div class="col-md-3 col-sm-3">
+               <div class="footerWidget wow fadeInDown" data-wow-duration="2s">
+                  <h3>Solutions</h3>                  <nav>
+                     <div class="menu-most-popular-container"><ul id="menu-most-popular" class="list"><li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a href="../lack-cloud-expertise-cost-enterprises-250-million-annually/cloud.html">Cloud</a></li>
+<li id="menu-item-6735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6735"><a href="../../containerization-services.html">Containerization Services</a></li>
+<li id="menu-item-1047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1047"><a href="../devops-managed-services-tap-the-true-potential-of-your-devops-transformation/devops.html">DevOps Services</a></li>
+<li id="menu-item-6063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6063"><a href="../../digital-transformation-services.html">Digital Transformation Services</a></li>
+<li id="menu-item-10658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10658"><a href="../../identity-and-access-management-services.html">Identity and Access Management</a></li>
+<li id="menu-item-9497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9497"><a href="../../managed-it-services.html">Managed IT Services</a></li>
+<li id="menu-item-4440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4440"><a href="../../technology-advisory-services.html">Technology Advisory</a></li>
+</ul></div>                  </nav>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+               <div class="footerWidget wow fadeInDown" data-wow-duration="2s">
+                  <h3>Industries</h3>                  <nav>
+                     <div class="menu-banking-and-financial-services-container"><ul id="menu-banking-and-financial-services" class="list"><li id="menu-item-11706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11706"><a href="../../automotive.html">Automotive</a></li>
+<li id="menu-item-11707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11707"><a href="../../aviation.html">Aviation</a></li>
+<li id="menu-item-11708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11708"><a href="https://www.veritis.com/energy.html">Energy</a></li>
+<li id="menu-item-11709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11709"><a href="https://www.veritis.com/financial-services.html">Banking and Financial Services</a></li>
+<li id="menu-item-9806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9806"><a href="https://www.veritis.com/government.html">Government</a></li>
+<li id="menu-item-11700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11700"><a href="https://www.veritis.com/healthcare.html">Healthcare</a></li>
+<li id="menu-item-11710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11710"><a href="https://www.veritis.com/manufacturing.html">Manufacturing</a></li>
+</ul></div>                  </nav>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+               <div class="footerWidget wow fadeInDown" data-wow-duration="2s">
+                  <!--h3>Subscribe to our newsletter</h3>
+                  <!-?php $widgetNL = new WYSIJA_NL_Widget(true);
+                     echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php')); ?-->
+					 <div class="address">
+					 <h3>Headquarters</h3>
+					<p><i class="fa fa-building-o" aria-hidden="true"></i>1231 Greenway Drive, Suite 1040<br>Irving, TX 75038, USA</br>
+					<i class="fa fa-phone-square"></i>1-877-283-7484
+					</p>
+					 </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section  id="footerRights">
+      <div class="container">
+         <div class="row">
+            <div class="veritis-certified-logos">
+               <div class="col-sm-12">
+                  <ul>
+                     <li><img src="https://www.veritis.com/wp-content/themes/Veritis/images/Veritis-AIAO-BAR-Accridated-logo.png" alt="AIAO BAR Accridated" title="AIAO BAR Accridated"></li>
+                     <li><img src="https://www.veritis.com/wp-content/themes/Veritis/images/Veritis-American-Independent-Accreditation-Board-logo.png" alt="American Independent Accreditation Board Certified" title="American Independent Accreditation Board Certified"></li>
+                     <li><img src="https://www.veritis.com/wp-content/themes/Veritis/images/Veritis-ISO-IQMS-9001-logo.png" alt="ISO IQMS 9001 Certified" title="ISO IQMS 9001 Certified"></li>
+                     <li><img src="https://www.veritis.com/wp-content/themes/Veritis/images/Veritis-ISO-logo.png" alt="ISO Certified" title="ISO Certified"></li>
+                     <li><img src="https://www.veritis.com/wp-content/themes/Veritis/images/Veritis-Registered-WRG-IEC-20000-logo.png" alt="Registered WRG IEC 20000 Certified" title="Registered WRG IEC 20000 Certified"></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12 mb-6">
+               <p>&copy; 2022 Veritis Group Inc.  All Rights Reserved. <a href="https://www.veritis.com/privacy-policy.html" target="_blank"> Privacy Policy</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <a class="cd-top cd-is-visible cd-fade-out" href="https://www.veritis.com/blog/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly/devops-on-aws-an-introduction-on-how-to-integrate-seamlessly.html#0">Top</a>
+   <div  class="phoneme hidden-lg">
+      <a href="https://www.veritis.com/contact.html" onClick="ga('send', 'event', 'Phone', 'Mobile', 'Phone Number', '1');"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+      <a href="tel:+19727530022" class="pull-right"><i class="fa fa-phone" aria-hidden="true"></i> Call Now!</a>
+   </div>
+</footer>
+
+
+
+</body></html>
